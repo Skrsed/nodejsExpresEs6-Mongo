@@ -1,0 +1,17 @@
+{
+  "name": "express-es-6",
+  "version": "1.0.0",
+  "description": "Test backend project using express and es6 with mongodb provider",
+  "author": "Konstantin Pesegov <k.pesegov@sibproauto.ru>",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.1",
+    "mongoose": "^5.11.13",
+    "nodemon": "^2.0.7",
+    "validator": "^13.5.2"
+  }
+}

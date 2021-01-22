@@ -1,0 +1,23 @@
+version: '3'
+services:
+  server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: i-express-es6-dc
+    tty: true
+    stdin_open: true
+    container_name: c-express-es6-dc
+    volumes:
+      - ./data:/express
+    ports:
+      - 8080
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - '27017:27017'
